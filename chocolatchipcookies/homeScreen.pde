@@ -1,5 +1,6 @@
 float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
-int tintDayMod=255, tintDayOpacity=50;
+int tintDayMode=255, tintDayModeOpacity =50;
+int tintRed=64, tintGreen=64, tintBlue=0, tintNightModeOpacity=85;
 
 void homeScreen() {//Exists VOID DRAW 
   println("At Home Screen Subprogram");// Testing Splash Screen Start Button working
@@ -14,17 +15,20 @@ void homeScreen() {//Exists VOID DRAW
    */
   ///
 } //End homeScreen
-backgroundWhiteScreen();
-noStroke();
-tint(tintDayMode, tintModeOpacity); //Night Mode tint
-rect(backgroundX, backgroundY, backgroundWidth, backgroundHeight);//white colour 
-stroke(1);//Rese: 1 pixels
-fill (white); //Reset: white
+void backgroundWhiteScreen() {
+  fill(white);
+  noStroke();
+  rect( backgroundX, backgroundY, backgroundWidth, backgroundHeight ); //white colour
+  stroke(1); //Reset: 1 pixel
+  fill(white); //Reset: white
 }//End backgroundWhiteScreen
-
-void backgroundImage() {
-}
-image(backgroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
-
 //
-//End homeScreen Subprogram
+void backgroundImage() {
+  backgroundWhiteScreen();
+  tint(tintDayMode, tintDayModeOpacity); //Night Mode Tint: 
+  //tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);
+  image(backgroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
+  //image with tint()
+}//End backgroundImage
+//
+//End Home Screen Subprogram
