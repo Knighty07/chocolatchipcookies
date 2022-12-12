@@ -1,5 +1,4 @@
-String spaceBar = "Press the Space Bar to Continue";
-color red=#EA3B3B, resetDefaultInk=#FFFFFF; 
+String spaceBar = "Adventures of Diluc";
 PFont font;
 /*NightMode comment 
  Red not for Night Mode (59 value on blue for red)
@@ -11,7 +10,7 @@ void textSetup() {
   //Fonts from OS (Operating System)
   // String[] fontList = PFont.list(); //To list all fonts available on OS
   //printArray(fontList); //For listing all possible fonts to choose from, then createFont
-  font = createFont("Microsoft-Yi-Baiti-48", 40); //Verify the font exists in Processing.Java
+  font = createFont("Arial", 40); //Verify the font exists in Processing.Java
   // Tools / Create Font / Find Font / Do not press "OK", known bug
 }//End textSetup
 //

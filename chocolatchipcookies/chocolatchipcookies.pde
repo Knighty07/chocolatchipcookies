@@ -1,6 +1,9 @@
 //Global Variables
 int appWidth, appHeight, largerDimension, smallerDimension;
-Boolean OS_On=false;
+Boolean OS_On=false,  splashScreenStart=false;
+color red=#EA3B3B, resetDefaultInk=#FFFFFF, white=#FFFFFF, black=#000000;
+
+
   void setup() {
   size(1000, 800);
   //fullScreen(); //displayWidth, displayHeight
@@ -16,10 +19,16 @@ textSetup();
 
 void draw() {
   //Assignment #2: OS Level Mouse Click and Splash Screen
-  if(OS_On==true) SplashScreen(); //OS Level Mouse Click 
+  if(OS_On==true && splashScreenStart==false) SplashScreen(); //OS Level Mouse Click 
+  if (splashScreenStart==true) homeScreen();
 }//End Draw
 
 void keyPressed() {
+  //Splash Screen SPACE Bar
+  if (OS_On==true && key== ' ') {
+    splashScreenStart = true;
+  backgroundImage();
+}
 }//End keyPressed
 
 void mousePressed() {
