@@ -12,6 +12,7 @@ color red=#EA3B3B, resetDefaultInk=#FFFFFF, white=#FFFFFF, black=#000000;
   appHeight=height ;
 population(); //Values based on DISPLAY
 textSetup();
+imageSetup();
    display();//Display Algorithm copied from Hello_World program
 // largerDimention=; //Display Algorithm
  //smallerDimension=;//Not needed
