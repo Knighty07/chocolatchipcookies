@@ -1,7 +1,7 @@
-PImage backgrondImage;
+PImage backgroundImage;
 
 void imageSetup(){
-  backgroundImage=loadImage("Dawnwinery.PNG")
+  backgroundImage=loadImage("Dawnwinery.PNG");
 }//End imageSetup
 //
 //End Image Subprogram
