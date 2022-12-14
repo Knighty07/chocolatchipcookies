@@ -1,5 +1,6 @@
 String spaceBar = "Adventures of Diluc";
 PFont font;
+String quit = "Quit";
 /*NightMode comment 
  Red not for Night Mode (59 value on blue for red)
  resetDefaultInk is Night Mode friendly
@@ -27,4 +28,15 @@ void spaceBarText() {
   fill(resetDefaultInk);
 }//End spaceBarText
 //
+void quitButtonText() {
+  rect(quitX,quitY,quitWidth,quitHeight);
+  fill(red); //Ink, hexidecimal copied from Color Selector
+  textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
+  //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
+  int size = 40; //Change the number until it fits
+  textFont(font, size); 
+  text(quitX,quitY,quitWidth,quitHeight);
+  noFill();
+  fill(resetDefaultInk);
+}//End spaceBarText
 //End Text Subprogram

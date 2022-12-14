@@ -14,6 +14,7 @@ void SplashScreen() {
  // background (255); //testing only, must have rect() as screen for backgrond image
   backgroundWhiteScreen();
   spaceBarText();
+  
   //
 }
 //End SplashScreen
