@@ -1,12 +1,23 @@
-void squares (){};
-//float topLeftSquareX, topLeftSqaureY, topLeftSqaureHeight,topLeftSqaureWidth;
-//float topMiddleSquareX, topMiddleSqaureY, topMiddleSqaureHeight,topMiddleSqaureWidth;
-//float topRightSquareX, topRightSqaureY, topRightSqaureHeight,topRightSqaureWidth;
-
-//float middleLeftSquareX, middleLeftSqaureY, middleLeftSqaureHeight,middleLeftSqaureWidth;
-//float middleCenterSquareX, middleCenterSqaureY, middleCenterSqaureHeight,middleCenterSqaureWidth;
-//float middleRightSquareX, middleRightSqaureY, middleRightSqaureHeight,middleRightSqaureWidth;
-
-//float bottomLeftSquareX, bottomLeftSqaureY, bottomLeftSqaureHeight,BottomLeftSqaureWidth;
-//float bottomMiddleSquareX, bottomMiddleSqaureY, bottomMiddleSqaureHeight,BottomMiddleSqaureWidth;
-//float bottomRightSquareX, bottomRightSqaureY, bottomRightSqaureHeight,BottomRightSqaureWidth;
+float topLeftX, topLeftY, topLeftWidth, topLeftHeight;
+float topRightX, topRightY, topRightWidth, topRightHeight;
+float topSquareX, topSquareY, topSquareWidth, topSquareHeight;
+float leftSquareX,leftSquareY,leftSquareWidth,leftSquareHeight;
+float rightSquareX,rightSquareY,rightSquareWidth,rightSquareHeight;
+float middleSquareX,middleSquareY,middleSquareWidth,middleSquareHeight;
+float bottomLeftX,bottomLeftY,bottomLeftWidth,bottomLeftHeight;
+float bottomRightX,bottomRightY,bottomRightWidth,bottomRightHeight; 
+float bottomSquareX,bottomSquareY,bottomSquareWidth,bottomSquareHeight;
+//
+void Squares() {
+  rect( topLeftX, topLeftY, topLeftWidth, topLeftHeight); //open later closed for testing
+ rect(topRightX, topRightY, topRightWidth, topRightHeight);
+  rect(topSquareX, topSquareY, topSquareWidth, topSquareHeight);
+  rect(leftSquareX,leftSquareY,leftSquareWidth,leftSquareHeight);
+  rect(rightSquareX,rightSquareY,rightSquareWidth,rightSquareHeight);
+  rect(middleSquareX,middleSquareY,middleSquareWidth,middleSquareHeight);
+  rect(bottomLeftX,bottomLeftY,bottomLeftWidth,bottomLeftHeight);
+  rect(bottomRightX,bottomRightY,bottomRightWidth,bottomRightHeight);
+  rect(bottomSquareX,bottomSquareY,bottomSquareWidth,bottomSquareHeight);
+}//end squares
+//
+//end sqaures subprogram

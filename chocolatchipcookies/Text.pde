@@ -16,27 +16,24 @@ void textSetup() {
 }//End textSetup
 //
 void spaceBarText() {
-  rect(startbuttonX, startbuttonY, startbuttonWidth, startbuttonHeight); //Start Button Text Start Button
+  //rect(startX, startY, startWidth, startHeight); //Start Button Text Start Button
   fill(red); //Ink, hexidecimal copied from Color Selector
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
   int size = 50; //Change the number until it fits
   textFont(font, size); 
-  text(spaceBar, startbuttonX, startbuttonY, startbuttonWidth, startbuttonHeight);
-  fill(resetDefaultInk);
-  text(spaceBar, startbuttonX, startbuttonY, startbuttonWidth, startbuttonHeight); //Press SPACE to continue
-  fill(resetDefaultInk);
+  text(spaceBar, startX, startY, startWidth, startHeight);
+  noFill();
 }//End spaceBarText
 //
 void quitButtonText() {
-  rect(quitX,quitY,quitWidth,quitHeight);
-  fill(red); //Ink, hexidecimal copied from Color Selector
+  //rect( quitX, quitY, quitWidth, quitHeight );
+  color ink = (  nightMode==true  ) ? #8DDE16 :red; //Note: hexidecimal example, only exists here
+  fill(ink); //Ink, hexidecimal copied from Color Selector
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
-  int size = 40; //Change the number until it fits
+  int size = 33; //Change the number until it fits
   textFont(font, size); 
-  text(quitX,quitY,quitWidth,quitHeight);
+  text( quit, quitX, quitY, quitWidth, quitHeight );
   noFill();
-  fill(resetDefaultInk);
 }//End spaceBarText
-//End Text Subprogram

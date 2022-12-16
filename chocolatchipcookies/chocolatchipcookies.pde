@@ -6,7 +6,7 @@ color red=#EA3B3B, resetDefaultInk=#FFFFFF, white=#FFFFFF, black=#000000;
 
 
 void setup() {
-  size(1000, 900);
+  size(1400, 1000);
   //fullScreen(); //displayWidth, displayHeight
   //Display Algorithm
   appWidth =width;
@@ -15,6 +15,8 @@ void setup() {
   textSetup();
   imageSetup();
   display();//Display Algorithm copied from Hello_World program
+    println("Smaller Dimension is", smallerDimension, "Larger Dimension is", largerDimension);
+
   // largerDimention=; //Display Algorithm
   //smallerDimension=;//Not needed
 }//End setup

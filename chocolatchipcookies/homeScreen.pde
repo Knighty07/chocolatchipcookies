@@ -1,7 +1,7 @@
 float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
 float quitX, quitY, quitWidth, quitHeight;
 int tintDayMode=255, tintDayModeOpacity =50;
-int tintRed=64, tintGreen=64, tintBlue=0, tintNightModeOpacity=85;
+int tintRed=0, tintGreen=106, tintBlue=116, tintNightModeOpacity=85;
 float quitButtonImageRectX, quitButtonImageRectY,quitButtonImageRectWidth,quitButtonImageRectHeight;
 void homeScreen() {//Exists VOID DRAW 
   println("At Home Screen Subprogram");// Testing Splash Screen Start Button working
@@ -15,16 +15,30 @@ void homeScreen() {//Exists VOID DRAW
    -Note: Must have one image with aspect ratio
    */
   if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) {
-  /*  fill(white); //Testing Only
+    /*
+    fill(white); //Testing Only
     rect( quitX, quitY, quitWidth, quitHeight ); //Testing Only
     noFill(); //Testing Only
     */
- quitButtonImage();
-} else { 
+    noStroke();
+    fill(white);
+    rect( quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight );
+    noFill();
+    stroke(1); //reset dedault
+    imageTintNightMode();
+    quitButtonImage(); //In Aspect Ratio
+  } else { 
+    noStroke();
+    fill(white);
+    rect( quitX, quitY, quitWidth, quitHeight );
+    noFill();
+    stroke(1); //reset dedault
     quitButtonText();
   }
+  //rect( quitX, quitY, quitWidth, quitHeight );
   //
-} //End homeScreen
+}//End homeScreen
+//
 void backgroundWhiteScreen() {
   fill(white);
   noStroke();
@@ -35,12 +49,7 @@ void backgroundWhiteScreen() {
 //
 void backgroundImage() {
   backgroundWhiteScreen();
-  //Control night mode, colour, with ternary operator 
-  if (nightMode==true) {
-    tint (tintRed, tintGreen, tintBlue, tintNightModeOpacity);
-  };
-  //Night Mode Tint: 
-  //tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);
+  imageTintNightMode();
   image(backgroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
   //image with tint()
 }//End backgroundImage
