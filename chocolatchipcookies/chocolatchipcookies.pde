@@ -6,7 +6,7 @@ color red=#EA3B3B, resetDefaultInk=#FFFFFF, white=#FFFFFF, black=#000000;
 
 
 void setup() {
-  size(1400, 1000);
+  size(1300, 1000);
   //fullScreen(); //displayWidth, displayHeight
   //Display Algorithm
   appWidth =width;
@@ -15,7 +15,7 @@ void setup() {
   textSetup();
   imageSetup();
   display();//Display Algorithm copied from Hello_World program
-    println("Smaller Dimension is", smallerDimension, "Larger Dimension is", largerDimension);
+  println("Smaller Dimension is", smallerDimension, "Larger Dimension is", largerDimension);
 
   // largerDimention=; //Display Algorithm
   //smallerDimension=;//Not needed
@@ -25,6 +25,7 @@ void draw() {
   //Assignment #2: OS Level Mouse Click and Splash Screen
   if (OS_On==true && splashScreenStart==false) SplashScreen(); //OS Level Mouse Click 
   if (splashScreenStart==true) homeScreen();
+  rect( quitX, quitY, quitWidth, quitHeight );
 }//End Draw
 
 void keyPressed() {
@@ -36,7 +37,7 @@ void keyPressed() {
 
   //Keyboard Shortcuts
   if (key==CODED && keyCode== ESC) exit();
-    if ( key=='N' || key=='n' ) {
+  if ( key=='N' || key=='n' ) {
     if ( nightMode==false ) { 
       nightMode = true;
       backgroundImage();
@@ -46,10 +47,10 @@ void keyPressed() {
     }
   }
   //
-}//E
+}//
+//
 void mousePressed() {
   //OS Level MouseClick
   if (OS_On==false) OS_On=true; //End OS Level Mouse Click
-  if  ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) exit();
-  
+  if  ( splashScreenStart==true && mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) exit();
 }//End mousePressed

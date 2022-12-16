@@ -2,6 +2,7 @@ PImage backgroundImage, quitButtonImage;
 
 void imageSetup() {
   backgroundImage=loadImage("Dawnwinery.PNG");
+  quitButtonImage=loadImage("exit.PNG");
 }//End imageSetup
 void imageTintNightMode() {
 

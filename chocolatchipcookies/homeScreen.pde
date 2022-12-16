@@ -3,6 +3,7 @@ float quitX, quitY, quitWidth, quitHeight;
 int tintDayMode=255, tintDayModeOpacity =50;
 int tintRed=0, tintGreen=106, tintBlue=116, tintNightModeOpacity=85;
 float quitButtonImageRectX, quitButtonImageRectY,quitButtonImageRectWidth,quitButtonImageRectHeight;
+//
 void homeScreen() {//Exists VOID DRAW 
   println("At Home Screen Subprogram");// Testing Splash Screen Start Button working
   /* Home Screen Expectations
@@ -14,6 +15,8 @@ void homeScreen() {//Exists VOID DRAW
    -See Case Study
    -Note: Must have one image with aspect ratio
    */
+   
+   //
   if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) {
     /*
     fill(white); //Testing Only
@@ -28,12 +31,12 @@ void homeScreen() {//Exists VOID DRAW
     imageTintNightMode();
     quitButtonImage(); //In Aspect Ratio
   } else { 
-    noStroke();
-    fill(white);
+    //noStroke();
+    //fill(white);
     rect( quitX, quitY, quitWidth, quitHeight );
-    noFill();
-    stroke(1); //reset dedault
-    quitButtonText();
+    //noFill();
+    //stroke(1); //reset dedault
+    //quitButtonText();
   }
   //rect( quitX, quitY, quitWidth, quitHeight );
   //
