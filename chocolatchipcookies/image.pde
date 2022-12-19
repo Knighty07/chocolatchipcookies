@@ -14,7 +14,7 @@ void imageTintNightMode() {
 }//End imageTintNightMode
 //
 void quitButtonImage() {
-  quitButtonImage = backgroundImage;
+  //quitButtonImage = backgroundImage;
   //
   //Image Dimensions
   float quitButtonImageWidth=358, quitButtonImageHeight=318;

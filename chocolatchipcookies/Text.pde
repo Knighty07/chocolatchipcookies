@@ -1,4 +1,4 @@
-String spaceBar = "Adventures of Diluc";
+String spaceBar = "Adventures of Diluc! Space to Continue";
 PFont font;
 String quit = "Quit";
 /*NightMode comment 

@@ -15,6 +15,7 @@ void setup() {
   textSetup();
   imageSetup();
   display();//Display Algorithm copied from Hello_World program
+
   println("Smaller Dimension is", smallerDimension, "Larger Dimension is", largerDimension);
 
   // largerDimention=; //Display Algorithm
@@ -23,9 +24,10 @@ void setup() {
 
 void draw() {
   //Assignment #2: OS Level Mouse Click and Splash Screen
-  if (OS_On==true && splashScreenStart==false) SplashScreen(); //OS Level Mouse Click 
-  if (splashScreenStart==true) homeScreen();
+  if (OS_On==true && splashScreenStart==false) SplashScreen(); //OS Level Mouse Click
+    if (splashScreenStart==true) Squares();
   rect( quitX, quitY, quitWidth, quitHeight );
+  if (splashScreenStart==true) homeScreen();
 }//End Draw
 
 void keyPressed() {

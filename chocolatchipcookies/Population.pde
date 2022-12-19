@@ -18,8 +18,8 @@ void population () {
   */
   quitWidth = appWidth *1/9; //Original 1/3 , debugging, to adjust
   quitHeight=appHeight * 1/10;
-  quitX =  centerX- 1/2;
-  quitY= centerY - 4*quitHeight;
+  quitX =  centerX- 1/3;
+  quitY= centerY ;
 
   quitButtonImageRectX= quitX;
   quitButtonImageRectY= quitY;
