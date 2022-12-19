@@ -28,6 +28,8 @@ void draw() {
     if (splashScreenStart==true) Squares();
   rect( quitX, quitY, quitWidth, quitHeight );
   if (splashScreenStart==true) homeScreen();
+//   if (splashScreenStart==true) homeScreen(); textSize(40); text("Exit", 730, 560);
+
 }//End Draw
 
 void keyPressed() {

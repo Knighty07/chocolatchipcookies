@@ -1,6 +1,7 @@
 String spaceBar = "Adventures of Diluc! Space to Continue";
 PFont font;
 String quit = "Quit";
+PFont text1,text2,text3,text4,text5,text6,text7,text8,text9;
 /*NightMode comment 
  Red not for Night Mode (59 value on blue for red)
  resetDefaultInk is Night Mode friendly
@@ -32,8 +33,8 @@ void quitButtonText() {
   fill(ink); //Ink, hexidecimal copied from Color Selector
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
-  int size = 8; //Change the number until it fits
+  int size = 33; //Change the number until it fits
   textFont(font, size); 
   text( quit, quitX, quitY, quitWidth, quitHeight );
-  noFill();
+ noFill();
 }//End spaceBarText

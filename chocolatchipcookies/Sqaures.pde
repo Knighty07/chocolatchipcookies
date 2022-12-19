@@ -12,6 +12,7 @@ float bottomRightX, bottomRightY, bottomRightWidth, bottomRightHeight;
 float bottomSquareX, bottomSquareY, bottomSquareWidth, bottomSquareHeight;
 //
 void Squares() {
+noFill();
   rect( topLeftX, topLeftY, topLeftWidth, topLeftHeight); 
   rect(topRightX, topRightY, topRightWidth, topRightHeight);
   rect(topSquareX, topSquareY, topSquareWidth, topSquareHeight);
@@ -23,5 +24,6 @@ void Squares() {
   rect(bottomLeftX, bottomLeftY, bottomLeftWidth, bottomLeftHeight);
   rect(bottomRightX, bottomRightY, bottomRightWidth, bottomRightHeight);
   rect(bottomSquareX, bottomSquareY, bottomSquareWidth, bottomSquareHeight);
+
 }//
 //end Sqaures subprogram
