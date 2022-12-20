@@ -44,6 +44,9 @@ void keyPressed() {
   }
 
   //Keyboard Shortcuts
+  if ( key=='B' || key=='b' ) {
+    filter(INVERT);
+      }
   if (key==CODED && keyCode== ESC) exit();
   if ( key=='N' || key=='n' ) {
     if ( nightMode==false ) { 
