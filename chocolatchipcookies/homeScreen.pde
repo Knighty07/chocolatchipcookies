@@ -1,7 +1,7 @@
 float backgroundX, backgroundY, backgroundWidth, backgroundHeight;
 float quitX, quitY, quitWidth, quitHeight;
 int tintDayMode=255, tintDayModeOpacity =50;
-int tintRed=0, tintGreen=106, tintBlue=116, tintNightModeOpacity=85;
+int tintRed=0, tintGreen=106, tintBlue=0, tintNightModeOpacity=85;
 float quitButtonImageRectX, quitButtonImageRectY,quitButtonImageRectWidth,quitButtonImageRectHeight;
 //
 void homeScreen() {//Exists VOID DRAW 

@@ -1,6 +1,6 @@
 void display(){
-float centerWidth, centerHeight, xStart, yStart, widthRect, heightRect; 
-float thick, thin;
+//float centerWidth, centerHeight, xStart, yStart, widthRect, heightRect; 
+//float thick, thin;
 
  //Concatenation
   println("\t\t\tWidth="+width, "\tHeight="+height); //key variables

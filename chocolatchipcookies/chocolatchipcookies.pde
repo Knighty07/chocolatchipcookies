@@ -3,7 +3,7 @@ int appWidth, appHeight, largerDimension, smallerDimension;
 Boolean OS_On=false, splashScreenStart=false;
 Boolean nightMode=false;
 color red=#EA3B3B, resetDefaultInk=#FFFFFF, white=#FFFFFF, black=#000000;
-
+Boolean homeScreen=false;
 
 void setup() {
   size(1300, 1000);
@@ -25,11 +25,15 @@ void setup() {
 void draw() {
   //Assignment #2: OS Level Mouse Click and Splash Screen
   if (OS_On==true && splashScreenStart==false) SplashScreen(); //OS Level Mouse Click
-    if (splashScreenStart==true) Squares();
+  if (splashScreenStart==true) Squares();
   rect( quitX, quitY, quitWidth, quitHeight );
   if (splashScreenStart==true) homeScreen();
-//   if (splashScreenStart==true) homeScreen(); textSize(40); text("Exit", 730, 560);
+  if (splashScreenStart==true) homeScreen(); 
+  textSize(40); 
+  text("Exit", 730, 560);
 
+  
+  if (splashScreenStart==true) sqaureImages();
 }//End Draw
 
 void keyPressed() {
