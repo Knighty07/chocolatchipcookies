@@ -18,6 +18,10 @@ void setup() {
 
   println("Smaller Dimension is", smallerDimension, "Larger Dimension is", largerDimension);
 
+  minim = new Minim(this); //load from data directory, loadFile should also load from project folder, like loadImage
+  song1 = minim.loadFile("Colors.mp3"); //able to pass absolute path, file name & extension, and URL
+  song1.loop(0);
+
   // largerDimention=; //Display Algorithm
   //smallerDimension=;//Not needed
 }//End setup
@@ -47,12 +51,45 @@ void draw() {
 }//End Draw
 
 void keyPressed() {
-  //Splash Screen SPACE Bar
   if (OS_On==true && key== ' ') {
     splashScreenStart = true;
     backgroundImage();
   }
 
+   if (key=='P' || key=='p') {
+    if (song1.isPlaying() ) 
+      song1.pause();
+    } else if (song1.position() >=song1.length()-song1.length()*1/10){
+      song1.play();
+    }
+
+  
+    if (key=='L' || key=='l') song1.loop(2);
+    if (key=='Z' || key=='z') song1.loop();
+    if (key=='R' || key=='r') {
+      if (song1.isMuted()) {
+        song1.unmute();
+      } else {
+        song1.isMuted();
+      }
+    }
+    if (key=='S' || key=='s')song1.skip(1000); //1000 Milliseconds=1 second
+    if (key=='T' || key=='t')song1.skip(-1000); 
+
+    
+    if  (key=='W' || key=='w') {
+      if (song1.isPlaying() ) {
+        song1.pause();
+        song1.rewind();
+      } else {
+        song1.rewind();
+      }
+    }
+  
+  
+  
+  
+  
   //Keyboard Shortcuts
   if ( key=='B' || key=='b' ) {
     filter(INVERT);
