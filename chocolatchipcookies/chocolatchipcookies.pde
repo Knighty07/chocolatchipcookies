@@ -4,7 +4,15 @@ Boolean OS_On=false, splashScreenStart=false;
 Boolean nightMode=false;
 color red=#EA3B3B, resetDefaultInk=#FFFFFF, white=#FFFFFF, black=#000000;
 Boolean homeScreen=false;
+import ddf.minim.*;
+import ddf.minim.analysis.*;
+import ddf.minim.effects.*;
+import ddf.minim.signals.*;
+import ddf.minim.spi.*;
+import ddf.minim.ugens.*;
 
+Minim minim;
+AudioPlayer song1; 
 void setup() {
   size(1300, 1000);
   //fullScreen(); //displayWidth, displayHeight
