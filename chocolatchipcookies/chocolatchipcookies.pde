@@ -25,13 +25,23 @@ void setup() {
 void draw() {
   //Assignment #2: OS Level Mouse Click and Splash Screen
   if (OS_On==true && splashScreenStart==false) SplashScreen(); //OS Level Mouse Click
-  if (splashScreenStart==true) Squares();
+  if (splashScreenStart==true) Sqaures();
   rect( quitX, quitY, quitWidth, quitHeight );
   if (splashScreenStart==true) homeScreen();
   if (splashScreenStart==true) homeScreen(); 
   textSize(40); 
   text("Exit", 730, 560);
-
+  if (OS_On==true && splashScreenStart==false) SplashScreen(); //OS level MOUSE click
+  if (splashScreenStart==true) homeScreen();
+  if (splashScreenStart==true) topLeftSquare(); 
+  if (splashScreenStart==true) topRightSquare(); 
+  if (splashScreenStart==true) topMiddleSquare(); 
+  if (splashScreenStart==true) leftSquare(); 
+  if (splashScreenStart==true) rightSquare(); 
+  if (splashScreenStart==true) middleSquare();
+  if (splashScreenStart==true) bottomLeftSquare();
+  if (splashScreenStart==true) bottomRightSquare();
+  if (splashScreenStart==true) bottomSquare();
   
   if (splashScreenStart==true) sqaureImages();
 }//End Draw

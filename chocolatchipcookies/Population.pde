@@ -1,191 +1,118 @@
-Boolean bottomLeft=true, bottomRight=true, bottomSquare=true, topLeft=true, topRight=true, topSquare=false, leftSquare=true, rightSquare=true, middleSquare=true;
-color grey=#8E8585;
 //
-
-//
-float topLeftCoverX, topLeftCoverY, topLeftCoverWidth, topLeftCoverHeight;
-float topRightCoverX, topRightCoverY, topRightCoverWidth, topRightCoverHeight;
-float topSquareCoverX, topSquareCoverY, topSquareCoverWidth, topSquareCoverHeight;
-float leftSquareCoverX, leftSquareCoverY, leftSquareCoverWidth, leftSquareCoverHeight;
-float rightSquareCoverX, rightSquareCoverY, rightSquareCoverWidth, rightSquareCoverHeight;
-float middleSquareCoverX, middleSquareCoverY, middleSquareCoverWidth, middleSquareCoverHeight;
-float bottomLeftCoverX, bottomLeftCoverY, bottomLeftCoverWidth, bottomLeftCoverHeight;
-float bottomRightCoverX, bottomRightCoverY, bottomRightCoverWidth, bottomRightCoverHeight;
-float bottomSquareCoverX, bottomSquareCoverY, bottomSquareCoverWidth, bottomSquareCoverHeight;
-//
-void topLeftSquare() {
-  if (topLeft==true && nightMode==false) { //dayMode version
-    fill(grey); 
-    rect(topLeftCoverX, topLeftCoverY, topLeftCoverWidth, topLeftCoverHeight);
-  } 
-  if (topLeft==false && nightMode==false) {
-    noFill();
-    rect(topLeftCoverX, topLeftCoverY, topLeftCoverWidth, topLeftCoverHeight);
-  }
-    if (topLeft==true && nightMode==true) { //nightMode version
-    fill(resetDefaultInk); 
-    rect(topLeftCoverX, topLeftCoverY, topLeftCoverWidth, topLeftCoverHeight);
-  } 
-  if (topLeft==false && nightMode==true) {
-    noFill();
-    rect(topLeftCoverX, topLeftCoverY, topLeftCoverWidth, topLeftCoverHeight);
-  }
-}//end topLeftSquare
-//
-void topRightSquare () {
-  if (topRight==true && nightMode==false) { //dayMode version
-    fill(grey); 
-    rect(topRightCoverX, topRightCoverY, topRightCoverWidth, topRightCoverHeight);
-  } 
-  if (topRight==false && nightMode==false) {
-    noFill();
-    rect(topRightCoverX, topRightCoverY, topRightCoverWidth, topRightCoverHeight);
-  }
-   if (topRight==true && nightMode==true) { //nightMode version
-    fill(resetDefaultInk); 
-    rect(topRightCoverX, topRightCoverY, topRightCoverWidth, topRightCoverHeight);
-  } 
-  if (topRight==false && nightMode==true) {
-    noFill();
-    rect(topRightCoverX, topRightCoverY, topRightCoverWidth, topRightCoverHeight);
-  }
-}// end topRightSquare
-//
-void topMiddleSquare () {
-  if (topSquare==true && nightMode==false) { //dayMode version
-    fill(grey); 
-    rect(topSquareCoverX, topSquareCoverY, topSquareCoverWidth, topSquareCoverHeight);
-  } 
-  if (topSquare==false && nightMode==false) {
-    noFill();
-    rect(topSquareCoverX, topSquareCoverY, topSquareCoverWidth, topSquareCoverHeight);
-  }
-    if (topSquare==true && nightMode==true) { //nightMode version
-    fill(resetDefaultInk); 
-    rect(topSquareCoverX, topSquareCoverY, topSquareCoverWidth, topSquareCoverHeight);
-  } 
-  if (topSquare==false && nightMode==true) {
-    noFill();
-    rect(topSquareCoverX, topSquareCoverY, topSquareCoverWidth, topSquareCoverHeight);
-  }
-}//end topmiddleSquare
-//
-void leftSquare () {
-  if (leftSquare==true && nightMode==false) { //dayMode version
-    fill(grey); 
-    rect(leftSquareCoverX, leftSquareCoverY, leftSquareCoverWidth, leftSquareCoverHeight);
-  } 
-  if (leftSquare==false && nightMode==false) {
-    noFill();
-    rect(leftSquareCoverX, leftSquareCoverY, leftSquareCoverWidth, leftSquareCoverHeight);
-  }
-    if (leftSquare==true && nightMode==true) { //nightMode version
-    fill(resetDefaultInk); 
-    rect(leftSquareCoverX, leftSquareCoverY, leftSquareCoverWidth, leftSquareCoverHeight);
-  } 
-  if (leftSquare==false && nightMode==true) {
-    noFill();
-    rect(leftSquareCoverX, leftSquareCoverY, leftSquareCoverWidth, leftSquareCoverHeight);
-  }
-}//end leftsquare
-//
-void rightSquare () {
-  if (rightSquare==true && nightMode==false) { //dayMode version
-    fill(grey); 
-    rect(rightSquareCoverX, rightSquareCoverY, rightSquareCoverWidth, rightSquareCoverHeight);
-  } 
-  if (rightSquare==false && nightMode==false) {
-    noFill();
-    rect(rightSquareCoverX, rightSquareCoverY, rightSquareCoverWidth, rightSquareCoverHeight);
-  }
-   if (rightSquare==true && nightMode==true) { //nightMode version
-    fill(resetDefaultInk); 
-    rect(rightSquareCoverX, rightSquareCoverY, rightSquareCoverWidth, rightSquareCoverHeight);
-  } 
-  if (rightSquare==false && nightMode==true) {
-    noFill();
-    rect(rightSquareCoverX, rightSquareCoverY, rightSquareCoverWidth, rightSquareCoverHeight);
-  }
-}//end rightsquare
-//
-void middleSquare() {
-  if (middleSquare==true && nightMode==false) { //dayMode version
-    fill(grey); 
-    rect(middleSquareCoverX, middleSquareCoverY, middleSquareCoverWidth, middleSquareCoverHeight);
-  } 
-  if (middleSquare==false && nightMode==false) {
-    noFill();
-    rect(middleSquareCoverX, middleSquareCoverY, middleSquareCoverWidth, middleSquareCoverHeight);
-  }
+void population() {
+  float centerX=appWidth * 1/2, centerY=appHeight * 1/2;
+ 
   //
-  if (middleSquare==true && nightMode==true) { //nightMode version
-    fill(resetDefaultInk); 
-    rect(middleSquareCoverX, middleSquareCoverY, middleSquareCoverWidth, middleSquareCoverHeight);
-  } 
-  if (middleSquare==false && nightMode==true) {
-    noFill();
-    rect(middleSquareCoverX, middleSquareCoverY, middleSquareCoverWidth, middleSquareCoverHeight);
-  }
-}//end middleSquare
-//
-void bottomLeftSquare () {
-  if (bottomLeft==true && nightMode==false) { //dayMode version
-    fill(grey); 
-    rect(bottomLeftCoverX, bottomLeftCoverY, bottomLeftCoverWidth, bottomLeftCoverHeight);
-  } 
-  if (bottomLeft==false && nightMode==false) {
-    noFill();
-    rect(bottomLeftCoverX, bottomLeftCoverY, bottomLeftCoverWidth, bottomLeftCoverHeight);
-  }
+  backgroundX = appWidth * 0;
+  backgroundY = appHeight * 0;
+  backgroundWidth = appWidth;
+  backgroundHeight = appHeight;
   //
-  if (bottomLeft==true && nightMode==true) { //nightMode version
-    fill(resetDefaultInk); 
-    rect(bottomLeftCoverX, bottomLeftCoverY, bottomLeftCoverWidth, bottomLeftCoverHeight);
-  } 
-  if (bottomLeft==false && nightMode==true) {
-    noFill();
-    rect(bottomLeftCoverX, bottomLeftCoverY, bottomLeftCoverWidth, bottomLeftCoverHeight);
-  }
-}//end bottomleftsquare
-//
-void bottomRightSquare () {
-  if (bottomRight==true && nightMode==false) { //dayMode version
-    fill(grey); 
-    rect(bottomRightCoverX, bottomRightCoverY, bottomRightCoverWidth, bottomRightCoverHeight);
-  } 
-  if (bottomRight==false && nightMode==false) {
-    noFill();
-    rect(bottomRightCoverX, bottomRightCoverY, bottomRightCoverWidth, bottomRightCoverHeight);
-  }
+  quitWidth = appWidth * 1/9; //Origonal 1/3, debugging to adjust
+  quitHeight = appHeight * 1/10;
+  quitX = centerX - quitWidth * 1/2;
+  quitY = centerY - 5*quitHeight ;
   //
-  if (bottomRight==true && nightMode==true) { //nightMode version
-    fill(resetDefaultInk); 
-    rect(bottomRightCoverX, bottomRightCoverY, bottomRightCoverWidth, bottomRightCoverHeight);
-  } 
-  if (bottomRight==false && nightMode==true) {
-    noFill();
-    rect(bottomRightCoverX, bottomRightCoverY, bottomRightCoverWidth, bottomRightCoverHeight);
-  }
-}//end bottomrightsquare
-//
-void bottomSquare() {
-  if (bottomSquare==true && nightMode==false) { //dayMode version
-    fill(grey); 
-    rect(bottomSquareCoverX, bottomSquareCoverY, bottomSquareCoverWidth, bottomSquareCoverHeight);
-  } 
-  if (bottomSquare==false && nightMode==false) {
-    noFill();
-    rect(bottomSquareX, bottomSquareY, bottomSquareWidth, bottomSquareHeight);
-  }
+  quitButtonImageRectX = quitX;
+  quitButtonImageRectY = quitY * 1/2;
+  quitButtonImageRectWidth = quitWidth * 5/6; //Origonal needs debugging to adjust
+  quitButtonImageRectHeight = quitHeight;
   //
-  if (bottomSquare==true && nightMode==true) { //nightMode version
-    fill(resetDefaultInk); 
-    rect(bottomSquareCoverX, bottomSquareCoverY, bottomSquareCoverWidth, bottomSquareCoverHeight);
-  } 
-  if (bottomSquare==false && nightMode==true) {
-    noFill();
-    rect(bottomSquareX, bottomSquareY, bottomSquareWidth, bottomSquareHeight);
-  }
-}//end bottomSquare
+  //greyScreenRectX = appWidth * 1/2.4;
+  //greyScreenRectY = appHeight * 1/10;
+  //greyScreenRectWidth = appWidth * 1/6;
+  //greyScreenRectHeight = appHeight * 1/6;
+  //
+  topLeftX = appWidth * 0;
+  topLeftY = appHeight * 0;
+  topLeftWidth = appWidth * 1/3;
+  topLeftHeight = appHeight * 1/3;
+  //
+  topRightX = appWidth * 2/3;
+  topRightY = appHeight * 0;
+  topRightWidth = appWidth * 1/3;
+  topRightHeight = appHeight * 1/3;
+  // 
+  topSquareX = appWidth * 1/3;
+  topSquareY = appHeight * 0;
+  topSquareWidth = appWidth * 1/3;
+  topSquareHeight = appHeight * 1/3;
+  //
+  leftSquareX = appWidth * 0;
+  leftSquareY = appHeight * 1/3;
+  leftSquareWidth = appWidth * 1/3;
+  leftSquareHeight = appHeight * 1/3;
+  //
+  rightSquareX = appWidth * 2/3;
+  rightSquareY = appHeight * 1/3;
+  rightSquareWidth = appWidth * 1/3;
+  rightSquareHeight = appHeight * 1/3;
+  //
+  middleSquareX = appWidth * 1/3;
+  middleSquareY = appHeight * 1/3;
+  middleSquareWidth = appWidth * 1/3;
+  middleSquareHeight = appHeight * 1/3;
+  //
+  bottomLeftX = appWidth * 0;
+  bottomLeftY = appHeight * 2/3;
+  bottomLeftWidth = appWidth * 1/3;
+  bottomLeftHeight = appHeight * 1/3;
+  //
+  bottomRightX = appWidth * 2/3;
+  bottomRightY = appHeight * 2/3;
+  bottomRightWidth = appWidth * 1/3;
+  bottomRightHeight = appHeight * 1/3;
+  //
+  bottomSquareX = appWidth * 1/3;
+  bottomSquareY = appHeight * 2/3;
+  bottomSquareWidth = appWidth * 1/3;
+  bottomSquareHeight = appHeight * 1/3;
+  //
+  topLeftCoverX = appWidth * 0;
+  topLeftCoverY = appHeight * 0;
+  topLeftCoverWidth = appWidth * 1/3;
+  topLeftCoverHeight = appHeight * 1/3;
+  //
+  topRightCoverX = appWidth * 2/3;
+  topRightCoverY = appHeight * 0;
+  topRightCoverWidth = appWidth * 1/3;
+  topRightCoverHeight = appHeight * 1/3;
+  // 
+  topSquareCoverX = appWidth * 1/3;
+  topSquareCoverY = appHeight * 0;
+  topSquareCoverWidth = appWidth * 1/3;
+  topSquareCoverHeight = appHeight * 1/3;
+  //
+  leftSquareCoverX = appWidth * 0;
+  leftSquareCoverY = appHeight * 1/3;
+  leftSquareCoverWidth = appWidth * 1/3;
+  leftSquareCoverHeight = appHeight * 1/3;
+  //
+  rightSquareCoverX = appWidth * 2/3;
+  rightSquareCoverY = appHeight * 1/3;
+  rightSquareCoverWidth = appWidth * 1/3;
+  rightSquareCoverHeight = appHeight * 1/3;
+  //
+  middleSquareCoverX = appWidth * 1/3;
+  middleSquareCoverY = appHeight * 1/3;
+  middleSquareCoverWidth = appWidth * 1/3;
+  middleSquareCoverHeight = appHeight * 1/3;
+  //
+  bottomLeftCoverX = appWidth * 0;
+  bottomLeftCoverY = appHeight * 2/3;
+  bottomLeftCoverWidth = appWidth * 1/3;
+  bottomLeftCoverHeight = appHeight * 1/3;
+  //
+  bottomRightCoverX = appWidth * 2/3;
+  bottomRightCoverY = appHeight * 2/3;
+  bottomRightCoverWidth = appWidth * 1/3;
+  bottomRightCoverHeight = appHeight * 1/3;
+  //
+  bottomSquareCoverX = appWidth * 1/3;
+  bottomSquareCoverY = appHeight * 2/3;
+  bottomSquareCoverWidth = appWidth * 1/3;
+  bottomSquareCoverHeight = appHeight * 1/3;
+  //
+}//end population
 //
-//end sqaures subprogram
+//end population subprogram
