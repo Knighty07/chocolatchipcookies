@@ -2,15 +2,15 @@ PImage backgroundImage, quitButtonImage;
 PImage img1,img2,img3,img4,img5,img6,img7,img8,img9;
 
 void imageSetup() {
-  img1=loadImage("Diluc slaying tighnari.PNG");
-  img2=loadImage("dilucglove.PNG");
-  img3=loadImage("tighnarfireflies.PNG");
-  img4=loadImage("pardisdhyai.PNG");
-  img5=loadImage("tighnaristare.PNG");
-  img6=loadImage("tighnarfireflies.PNG");
-  img7=loadImage("tighnariforest.PNG");
-  img8=loadImage("dawnwineryinside.PNG");
-  img9=loadImage("bedroomgenshin.PNG");
+  img1=loadImage("red.PNG");
+  img2=loadImage("orange.PNG");
+  img3=loadImage("yellow.PNG");
+  img4=loadImage("green.PNG");
+  img5=loadImage("teal.PNG");
+  img6=loadImage("blue.PNG");
+  img7=loadImage("purple.PNG");
+  img8=loadImage("pink.PNG");
+  img9=loadImage("violet.PNG");
   backgroundImage=loadImage("Dawnwinery.PNG");
   quitButtonImage=loadImage("exit.PNG");
 }//End imageSetup
