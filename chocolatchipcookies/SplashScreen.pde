@@ -2,6 +2,7 @@
 float startX, startY, startWidth, startHeight;
 void SplashScreen() {
   println("hi");
+ 
   /*Note: any visually-based code running in SetUp() controlled by MouseClick
    - background image
    */

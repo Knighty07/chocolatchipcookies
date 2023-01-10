@@ -1,5 +1,5 @@
 PImage backgroundImage, quitButtonImage;
-PImage img1,img2,img3,img4,img5,img6,img7,img8,img9;
+PImage img1,img2,img3,img4,img5,img6,img7,img8,img9,img10;
 
 void imageSetup() {
   img1=loadImage("red.PNG");
@@ -13,6 +13,8 @@ void imageSetup() {
   img9=loadImage("violet.PNG");
   backgroundImage=loadImage("Dawnwinery.PNG");
   quitButtonImage=loadImage("exit.PNG");
+  img10 = loadImage("music.png");
+image(img10, middleSquareX *1/2, middleSquareY *1/2, middleSquareWidth *1/2, middleSquareHeight *1/2);
 }//End imageSetup
 void imageTintNightMode() {
 

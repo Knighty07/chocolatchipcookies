@@ -79,6 +79,7 @@ void topMiddleSquare () {
   }
 }//end topmiddleSquare
 //
+
 void leftSquare () {
   if (leftSquare==true && nightMode==false) { //dayMode version
     fill(grey); 
@@ -195,6 +196,9 @@ void bottomSquare() {
     noFill();
     rect(bottomSquareX, bottomSquareY, bottomSquareWidth, bottomSquareHeight);
   }
-}//end bottomSquare
+  
+}
+
+//end bottomSquare
 //
 //end sqaures subprogram
