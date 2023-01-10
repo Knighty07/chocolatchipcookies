@@ -17,7 +17,7 @@ void imageSetup() {
 image(img10, middleSquareX *1/2, middleSquareY *1/2, middleSquareWidth *1/2, middleSquareHeight *1/2);
 }//End imageSetup
 void imageTintNightMode() {
-
+//text(Spacebar);
   if ( nightMode==true ) {
     tint(tintRed, tintGreen, tintBlue, tintNightModeOpacity);
   } else {
