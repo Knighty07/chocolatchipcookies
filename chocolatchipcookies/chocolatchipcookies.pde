@@ -13,6 +13,7 @@ import ddf.minim.ugens.*;
 
 Minim minim;
 AudioPlayer song1; 
+AudioPlayer song2;
 void setup() {
   size(1300, 1000);
   //fullScreen(); //displayWidth, displayHeight
@@ -31,7 +32,7 @@ text(s, 40, 40, 280, 320);
   minim = new Minim(this); //load from data directory, loadFile should also load from project folder, like loadImage
   song1 = minim.loadFile("Colors.mp3"); //able to pass absolute path, file name & extension, and URL
   song1.loop(0);
-
+  platinumdisco();
   // largerDimention=; //Display Algorithm
   //smallerDimension=;//Not needed
 }//End setup
@@ -44,7 +45,10 @@ void draw() {
   if (splashScreenStart==true) homeScreen();
   if (splashScreenStart==true) homeScreen(); 
   textSize(40); 
-  text("Exit", 730, 560);
+  text("Color Song", 730, 560);
+  textSize(20);
+  text("a,b,c,d,p,s,z,l,n,k,w, controls, double n to reset",630,400);
+  
  
   if (OS_On==true && splashScreenStart==false) SplashScreen(); //OS level MOUSE click
   if (splashScreenStart==true) homeScreen();

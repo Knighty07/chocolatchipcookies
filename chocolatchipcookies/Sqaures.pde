@@ -1,4 +1,4 @@
-Boolean bottomLeft=true, bottomRight=true, bottomSquare=true, topLeft=true, topRight=true, topSquare=false, leftSquare=true, rightSquare=true, middleSquare=true;
+Boolean bottomLeft=false , bottomRight=false, bottomSquare=false, topLeft=false, topRight=false, topSquare=false, leftSquare=false, rightSquare=false, middleSquare=false;
 color grey=#8E8585;
 //
 void Sqaures(){}
@@ -21,6 +21,8 @@ float middleSquareCoverX, middleSquareCoverY, middleSquareCoverWidth, middleSqua
 float bottomLeftCoverX, bottomLeftCoverY, bottomLeftCoverWidth, bottomLeftCoverHeight;
 float bottomRightCoverX, bottomRightCoverY, bottomRightCoverWidth, bottomRightCoverHeight;
 float bottomSquareCoverX, bottomSquareCoverY, bottomSquareCoverWidth, bottomSquareCoverHeight;
+Float text1,text2,text3,text4,text5,text6,text7,text8,text9;
+
 //
 void topLeftSquare() {
   if (topLeft==true && nightMode==false) { //dayMode version

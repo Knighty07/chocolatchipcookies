@@ -1,13 +1,14 @@
 String spaceBar = "Adventures of Diluc! Space to Continue";
 PFont font;
 String quit = "Quit";
+
 PFont text1,text2,text3,text4,text5,text6,text7,text8,text9;
 
-/*NightMode comment 
- Red not for Night Mode (59 value on blue for red)
- resetDefaultInk is Night Mode friendly
- 
- */
+/*//NightMode comment 
+//PFontghtMode comment 
+ //Red not for Night Mode (59 value on blue for red)
+ //resetDefaultInk is Night Mode friendly
+
 void textSetup() {
   //Minimum Expectation is SINGLE FONT
   //Fonts from OS (Operating System)
