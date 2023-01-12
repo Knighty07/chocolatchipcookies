@@ -17,7 +17,7 @@ void homeScreen() {//Exists VOID DRAW
    */
 
   //
-  
+
   if ( mouseX>=quitX && mouseX<=quitX+quitWidth && mouseY>=quitY && mouseY<=quitY+quitHeight ) {
     /*
     fill(white); //Testing Only
@@ -41,11 +41,11 @@ void homeScreen() {//Exists VOID DRAW
   }
   //rect( quitX, quitY, quitWidth, quitHeight );
   //
-//End homeScreen
-//
-//}
-{
-  
+  //End homeScreen
+  //
+}
+
+
 void backgroundWhiteScreen() {
   fill(white);
   noStroke();
@@ -59,7 +59,8 @@ void backgroundImage() {
   imageTintNightMode();
   image(backgroundImage, backgroundX, backgroundY, backgroundWidth, backgroundHeight);
 }
-  //image with tint()
+
+//image with tint()
 //End backgroundImage
 //
 //End Home Screen Subprogram
