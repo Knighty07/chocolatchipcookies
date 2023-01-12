@@ -22,6 +22,7 @@ float bottomLeftCoverX, bottomLeftCoverY, bottomLeftCoverWidth, bottomLeftCoverH
 float bottomRightCoverX, bottomRightCoverY, bottomRightCoverWidth, bottomRightCoverHeight;
 float bottomSquareCoverX, bottomSquareCoverY, bottomSquareCoverWidth, bottomSquareCoverHeight;
 Float text1,text2,text3,text4,text5,text6,text7,text8,text9;
+float titleX, titleY, titleHeight, titleWidth;
 
 //
 void topLeftSquare() {

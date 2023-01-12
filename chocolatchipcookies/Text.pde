@@ -1,8 +1,7 @@
 String spaceBar = "Adventures of Diluc! Space to Continue";
 PFont font;
 String quit = "Quit";
-
-
+String title ="Hi?";
 //NightMode comment 
 //PFontghtMode comment 
  //Red not for Night Mode (59 value on blue for red)

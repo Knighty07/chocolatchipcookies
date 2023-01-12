@@ -27,6 +27,7 @@ void homeScreen() {//Exists VOID DRAW
     noStroke();
     fill(white);
     rect( quitButtonImageRectX, quitButtonImageRectY, quitButtonImageRectWidth, quitButtonImageRectHeight );
+    rect( titleX, titleY, titleWidth, titleHeight);
     noFill();
     stroke(1); //reset dedault
     imageTintNightMode();

@@ -23,4 +23,5 @@ void sqaureImages
   image(img9, rightSquareX, rightSquareY, rightSquareWidth, rightSquareHeight);
   image(img5, bottomLeftX, bottomLeftY, bottomLeftWidth, bottomLeftHeight);
   image(img7, topRightX, topRightY, topRightWidth, topRightHeight);
+  
 }

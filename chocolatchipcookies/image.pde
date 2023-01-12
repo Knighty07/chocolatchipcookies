@@ -51,6 +51,7 @@ void quitButtonImage() {
     quitButtonImageRectX = centerX - quitButtonImageWidth_Adjusted * 1/2;
     imageTintNightMode();
     image( quitButtonImage, quitButtonImageRectX, quitButtonImageRectY, quitButtonImageWidth_Adjusted, quitButtonImageHeight_Calculated );
+    
     //
   } else 
   {//Portrait

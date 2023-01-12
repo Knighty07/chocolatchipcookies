@@ -112,6 +112,13 @@ void population() {
   bottomSquareCoverY = appHeight * 2/3;
   bottomSquareCoverWidth = appWidth * 1/3;
   bottomSquareCoverHeight = appHeight * 1/3;
+ 
+  
+//  titleX = topSquareX *1/4;
+ // titleY = topSquareY *1/3;
+ // titleWidth = topSquareWidth *1/2;
+  //titleHeight = topSquareHeight *1/2;
+  
   //
 }//end population
 //

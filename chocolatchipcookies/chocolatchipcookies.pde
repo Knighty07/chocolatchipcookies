@@ -25,9 +25,8 @@ void setup() {
   imageSetup();
   display();//Display Algorithm copied from Hello_World program
   println("Smaller Dimension is", smallerDimension, "Larger Dimension is", largerDimension);
-
-String s = "Space a,b,c,d,n controls. ";
-text(s, 40, 40, 280, 320);
+  String s = "Space a,b,c,d,n controls. ";
+  text(s, 40, 40, 280, 320);
 
   minim = new Minim(this); //load from data directory, loadFile should also load from project folder, like loadImage
   song1 = minim.loadFile("Colors.mp3"); //able to pass absolute path, file name & extension, and URL
@@ -43,13 +42,13 @@ void draw() {
   if (splashScreenStart==true) Sqaures();
   rect( quitX, quitY, quitWidth, quitHeight );
   if (splashScreenStart==true) homeScreen();
-  if (splashScreenStart==true) homeScreen(); 
   textSize(40); 
   text("Color Song", 730, 560);
   textSize(20);
-  text("a,b,c,d,p,s,z,l,n,k,w, controls, double n to reset",630,400);
+  text("a,b,c,d,p,s,z,l,n,k,w, controls, double n to reset", 630, 400);
   
- 
+
+
   if (OS_On==true && splashScreenStart==false) SplashScreen(); //OS level MOUSE click
   if (splashScreenStart==true) homeScreen();
   if (splashScreenStart==true) topLeftSquare(); 
