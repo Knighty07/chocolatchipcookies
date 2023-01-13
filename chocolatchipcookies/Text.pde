@@ -17,7 +17,7 @@ void textSetup() {
 }//End textSetup
 //
 void spaceBarText() {
-  //rect(startX, startY, startWidth, startHeight); //Start Button Text Start Button
+  rect(startX, startY, startWidth, startHeight); //Start Button Text Start Button
   fill(red); //Ink, hexidecimal copied from Color Selector
   textAlign(CENTER, CENTER); //Align X&Y, see Processing.org / Reference
   //Values: [ LEFT | CENTER | RIGHT ] & [ TOP | CENTER | BOTTOM | BASELINE ]
