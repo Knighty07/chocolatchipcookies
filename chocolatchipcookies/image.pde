@@ -13,8 +13,8 @@ void imageSetup() {
   img9=loadImage("violet.PNG");
   backgroundImage=loadImage("Dawnwinery.PNG");
   quitButtonImage=loadImage("exit.PNG");
-  img10 = loadImage("music.png");
-image(img10, middleSquareX *1/2, middleSquareY *1/2, middleSquareWidth *1/2, middleSquareHeight *1/2);
+ // img10 = loadImage("music.png");
+//image(img10, middleSquareX *1/2, middleSquareY *1/2, middleSquareWidth *1/2, middleSquareHeight *1/2);
 }//End imageSetup
 void imageTintNightMode() {
 //text(Spacebar);
